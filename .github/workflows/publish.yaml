@@ -13,10 +13,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Download JSON file
-        uses: actions/download-artifact@v4
-        with:
-          name: manifest
       - name: Compress build files
         uses: thedoctor0/zip-release@0.7.6
         with:
